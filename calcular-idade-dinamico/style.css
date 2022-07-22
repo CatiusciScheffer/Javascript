@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:wght@200&family=Rubik+Moonrocks&family=Staatliches&display=swap');
+
+body{
+    background-color: #3a86ff;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 600px;
+    font-family: 'Oswald', sans-serif;
+}
+
+section{
+    background-color: whitesmoke;
+    color: #797d62;
+    border-radius: 10px;
+    font-size: 18pt;
+    padding: 20px;
+    margin: auto;
+    width: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
+    text-align:start;
+}
+
+#txtano{
+    text-align: center;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #797d62;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-verificar{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2ch;
+    background-color: darkorange;
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+    color: wheat;
+    text-align: center;
+}
+
+footer{
+    font-style: italic;
+}
