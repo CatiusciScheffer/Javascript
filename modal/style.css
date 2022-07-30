@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box; /*não deixa o conteúdo ultrapassar o box*/
+}
+
+body{
+    padding: 1rem;
+}
+h1{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+button{
+    padding: .6rem 1.2rem;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;/*colocar mão qdo cursor passar sobre botão*/
+    opacity: 0.7; /*mostrar mais escuro no foco qdo usar o hover, quanto menor mais escuro*/
+    text-transform: capitalize;
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+#open-modal{
+    background-color: #007bff;
+}
+
+button:hover {
+    opacity: 1;/*juntamente com a opacity acima, qdo cursor focar o botão fica mais escuro*/
+}
+
+#fade, 
+#modal{
+    transition: 0.5s;
+    opacity: 1;
+    /*fazendo a transição da opacidade em meio segundo*/
+    pointer-events: all;
+}/*habilitando os eventos de click*/
+
+#fade{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5;/*faz ficar na frente de tudo*/
+}
+
+#modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    /*pegou o modal pelo canto superior esquerdo e colocou no centro da tela*/
+    transform: translate(-50%, -50%);
+    /*pegou o modal trouxe metade para esquerda e metade para cima*/
+    /*CENTRALIZOU NA PÁGINA COM ESSES DOIS COMANDOS*/
+    background-color: #FFF;
+    z-index: 10;/*trouxe para frente do fade por ser maior*/
+    width: 500px;
+    max-width: 90%;/*responsividade deixando utilizar no máximo 90% tela*/
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid  #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body p{
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;/*removendo evento de click aqui*/
+}/*faz sumir o modal*/
+
+#modal.hide{
+    top: 0;
+}
