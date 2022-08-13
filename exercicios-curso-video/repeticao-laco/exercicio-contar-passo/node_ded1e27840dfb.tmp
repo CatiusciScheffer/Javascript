@@ -1,0 +1,12 @@
+/*var inicio = window.document.getElementById('numinicio')
+var fim = window.document.getElementById('numfim')
+var passo = window.document.getElementById('numpasso')*/
+
+var a = 5
+var b = 12
+var p = 2
+p += p
+
+for(a == a; p <= b; p+p){
+    console.log(a+p)
+}

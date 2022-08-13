@@ -9,5 +9,5 @@ Utilizei além da API vários outros conceitos que venho estudando como flexbox,
 
 **Página ficou assim:**
 
-![Imagem da Página](/assets/img/apicats.png)
+![Imagem da Página](./assets/img/apicats.png)
 
