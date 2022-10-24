@@ -23,7 +23,8 @@ body{
     border-radius: 10px;
     flex-direction: column;
     padding: 0.8rem;
-    width: auto;
+    min-width: 393px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.247);
 }
 #calc h3{
     color: #772f1a;
@@ -31,6 +32,7 @@ body{
     width: 100%;
     text-transform: uppercase;
     margin: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.205);
 }
 
 #display{
@@ -45,8 +47,12 @@ body{
     border-radius: 5px;
     color: #772f1a;
     font-size: 1.8rem;
+    box-shadow: inset -.5px -.5px 20px 10px rgba(0, 0, 0, 0.164);
 }
-
+#buttons-container button{
+    box-shadow: inset -.5px -.5px 2px 2px rgba(0, 0, 0, 0.171);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+}
 button{
     background-color: #f2a65a;
     width: 5rem;

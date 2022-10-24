@@ -1,7 +1,8 @@
 const previousDisplayText = document.querySelector("#previous-display");
 const currentDisplayText = document.querySelector('#current-display')
 const buttons = document.querySelectorAll('#buttons-container button')
-console.log(buttons);
+const resultado = document.querySelector("#resultado")
+console.log(resultado, 's');
 
 class Calculator {
   constructor(previousDisplayText, currentDisplayText) {
@@ -53,6 +54,14 @@ class Calculator {
         operationValue = previous * current;
         this.updateScreen(operationValue, operation, current, previous);
         break;
+      case "%":
+        operationValue = previous * (current/100);
+        this.updateScreen(operationValue, operation, current, previous);
+        break; 
+      case "x²":
+        operationValue = previous * previous;
+        this.updateScreen(operationValue, operation, current, previous);
+        break; 
       case "DEL":
         this.processDelOperator();
         break;
@@ -61,11 +70,9 @@ class Calculator {
         break;
       case "CE":
         this.processClearPreviousOperator();
-        this.previousDisplayText.style.fontSize = "18px";
         break;
       case "=":
         this.processEqualOperator();
-        this.previousDisplayText.style.fontSize = "50px";
         break; 
       default:
         break;
@@ -96,7 +103,7 @@ class Calculator {
   // mudando operação matemática
   changeOperation(operation){
 
-    const mathOperations = ["*", "/", "+", "-" ];
+    const mathOperations = ["*", "/", "+", "-", "%"];
     /**verificando se o usuário inseriu uma operação válida
      * caso contrário aborta a operação
      */
@@ -123,13 +130,12 @@ class Calculator {
   processEqualOperator(){
     //juntando os valores do current, previous e mais o operador
     const operation = previousDisplayText.innerText.split(" ")[1];
-
+    
     this.processOperation(operation);
     // removendo operador após apertar no igual
     this.previousDisplayText.innerText = this.previousDisplayText.innerText.slice(0, -1);
-    //alterando tamanho da fonte após clicar em igual
-    //this.previousDisplayText.style.fontSize = "50px";
   }
+  
 }
 
 const calc = new Calculator(previousDisplayText, currentDisplayText);
