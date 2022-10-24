@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("./fundo.jpg");
+    background-repeat: no-repeat;
+}
+
+section{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+    padding: 80px;
+    height: 500px;
+    opacity: 2;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button{
+    background-color: #21bb54;
+    border: 1px solid #b0ffca;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #b0ffca;
+    text-align: center;
+    padding: 5px;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  :checked + label {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
