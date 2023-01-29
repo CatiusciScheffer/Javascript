@@ -1,0 +1,63 @@
+.skills{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    padding: 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.skills h3{
+    padding-left: 0;
+}
+
+.skills .tools{
+    width: 50%;
+}
+
+.skills .personal{
+    width: 50%;
+}
+
+.tools_img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tools_img img{
+    width: 60px;
+    height: auto;
+    margin: .5rem;
+}
+
+.personal li{
+    width: 15rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    line-height: 2.5;
+}
+
+.personal li::before{
+    content: '';
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    background-image: url(../img/icons/check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .25rem;
+}
+
+
+@media only screen and (min-width: 768px){
+    .skills{
+        display: flex;
+        flex-direction: row;
+    }
+
+    li{
+        padding: 0;
+        width: auto;
+    }
+}

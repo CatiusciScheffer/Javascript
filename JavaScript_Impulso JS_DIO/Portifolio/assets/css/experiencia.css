@@ -1,0 +1,25 @@
+.experiencia{
+    padding: 0 2rem 2rem 2rem;
+    text-align: justify;
+}
+
+.calendario::before{
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url(../img/icons/calendar.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.exp_ind{
+    border-left: solid;
+    padding-left: 1rem;
+}
+.exp_ind-1{
+    border-left: solid;
+    padding-left: 1rem;
+    margin: 5rem 0 0 0;
+}

@@ -7,14 +7,6 @@
   border-radius: 1rem;
 }
 
-h3, p{
-  padding: 0 0 1rem 1rem;
-}
-
-li, p{
-  margin: 1rem;  
-}
-
 /*Estilização do Borão de Skills, Idioma, Portifólio e Experiência Profissional*/
 .acordeon .btn_acordeon {
   display: flex;

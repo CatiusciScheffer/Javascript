@@ -1,0 +1,48 @@
+{
+    "name": "Catiusci P. C. Scheffer",
+    "photo": "https://avatars.githubusercontent.com/u/98183682?s=400&u=fc4f4d7f0d79c48f754861e8d5ef1d71e81eda11&v=4",
+    "job": "... Ciências da Computação",
+    "location": "Cachoeirinha - RS",
+    "phone": "(51) 98127-9781",
+    "email": "cpcscheffer@outlook.com",
+    "skills": {
+      "hardSkills": [
+        {
+          "name": "SQL",
+          "logo": "./assets/img/tools/sql.png"
+        },
+        {
+          "name": "MySQL",
+          "logo": "./assets/img/icons/mysql.png"
+        },
+        {
+          "name": "Python",
+          "logo": "./assets/img/icons/python.png"
+        },
+        {
+          "name": "JavaScript",
+          "logo": "./assets/img/icons/js.png"
+        },
+        {
+          "name": "CSS3",
+          "logo": "./assets/img/icons/css.png"
+        },
+        {
+          "name": "HTML5",
+          "logo": "./assets/img/icons/html5.png"
+        }
+      ],
+      "softSkills": [
+        "Empatia",
+        "Liderança",
+        "Trabalho em equipe",
+        "Flexibilidade",
+        "Organização",
+        "Dinamismo"
+      ]
+    },
+    "languages": [
+      "Português BR",
+      "Inglês (intermediário)"
+    ]
+  }

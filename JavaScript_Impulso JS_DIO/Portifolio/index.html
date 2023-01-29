@@ -11,11 +11,9 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Normalize, deixar a aparência igual em qualquer navegador.-->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="./assets/fonts/neuemachina-regular.otf">
 
     <link rel="stylesheet" href="./assets/css/header.css">
@@ -23,48 +21,70 @@
     <link rel="stylesheet" href="./assets/css/acordeon.css">
     <link rel="stylesheet" href="./assets/css/language.css">
     <link rel="stylesheet" href="./assets/css/portifolio.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
+    <link rel="stylesheet" href="./assets/css/experiencia.css">
 </head>
 
 <body>
     <main class="main">
         <header class="header">
-            <img class="photo" src="./assets/img/my-foto.jpg" alt="Foto Catiusci">
+            <img class="photo" src="./assets/img/my-foto.jpg" alt="Foto Catiusci" id="profile.photo">
 
             <h1 class="title">
-                Olá,
-                <br>
-                eu sou Catiusci P. C. Scheffer
+                Olá, eu sou <br> <span id="profile.name">Carregando...</span>
             </h1>
 
             <div class="information">
-                <p class="job">Transição de Carreira</p>
-                <p class="location">Cachoeirinha/RS</p>
+                <p class="job" id="profile.job">Carregando...</p>
+                <p class="location" id="profile.location">Carregando...</p>
                 <p class="phone">
-                    <a href="tel:(51) 9 8127-9781">(51) 9 8127-9781</a>
+                    <a href="tel:(16) 9 9999-9999" id="profile.phone">Carregando...</a>
                 </p>
                 <p class="email">
-                    <a href="mailto:cpcscheffer@outlook.com">cpcscheffer@outlook.com</a>
+                    <a href="mailto:ex@mail.com" id="profile.email">carregando@mail.com</a>
                 </p>
             </div>
         </header>
+
         <section class="acordeon open">
             <button class="btn_acordeon" type="button">
                 <span class="btn_title">Skills</span>
             </button>
             <div class="content">
-                <section class="tools">
-                    <h3>Ferramentas:</h3>
-                </section>
-                <section class="personal">
-                    <h3>Pessoal:</h3>
-                    <ul>
-                        <li>Empatia</li>
-                        <li>Lideranla</li>
-                        <li>Trabalho em equipe</li>
-                        <li>Flexibilidade</li>
-                        <li>Organização</li>
-                    </ul>
-                </section>
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Ferramentas:</h3>
+                        <ul class="tools_img" id="profile.skills.hardSkills">
+                            <!-- CÓDIGO SUBSTITUIDO PELO JSON E JS DINÂMICO
+                                <li>
+                                <img src="./assets/img/tools/sql.png" alt="logo sql">
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/mysql.png" alt="logo MySql">
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/python.png" alt="logo python" srcset="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/js.png" alt="logo javascript" srcset="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/css.png" alt="logo css3" srcset="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/html5.png" alt="logo html5" srcset="">
+                            </li> -->
+                        </ul>
+                    </section>
+                    <section class="personal">
+                        <h3>Pessoal:</h3>
+                        <ul id="profile.skills.softSkills">
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
+                        </ul>
+                    </section>
+                </div>
             </div>
         </section>
         <section class="acordeon open">
@@ -72,9 +92,11 @@
                 <span class="btn_title">Idiomas</span>
             </button>
             <div class="content">
-                <ul class="language">
-                    <li>Português BR</li>
-                    <li>Inglês (intermediário)</li>
+                <ul class="language" id="profile.languages">
+                    <li>Carregando...</li>
+                    <!-- CÓDIGO SUBTITUÍDO JSON E JS DINÂMICO 
+                        <li>Português BR</li>
+                    <li>Inglês (intermediário)</li> -->
                 </ul>
             </div>
         </section>
@@ -83,7 +105,7 @@
                 <span class="btn_title">Portifólio</span>
             </button>
             <div class="content">
-                <ul class="portifolio">
+                <ul class="portifolio" id="profile.portfolio">
                     <li>
                         <a href="https://github.com/CatiusciScheffer/HTML" target="_blank">HTML</a>
                     </li>
@@ -107,12 +129,67 @@
                 <span class="btn_title">Experiência Profissional</span>
             </button>
             <div class="content">
-                <p>Enc. Departamento Pessoal / Cachoeirinha Contabilidade</p>
-                <p>2019 - até o momento</p>
+                <div class="experiencia" id="profile.professionalExperience">
+                    <div class="exp_ind">
+                        <h3>Departamento Pessoal</h3>
+                        <p class="calendario">2019 - até o momento</p>
+                        <ul>
+                            <li>- Cálculos da folha de pagamento, rescisões, férias e 13º salário;</li>
+                            <li>- Rotinas do departamento pessoal como admissão e controle dos
+                                vencimentos;</li>
+                            <li>- Obrigações como e-social, RAIS, DIRF, DCTFWeb;</li>
+                        </ul>
+                        <h4>Resultados</h4>
+                        <p>
+                            Quando iniciei na empresa todas as rotinas não eram automatizadas mesmo tendo sistema pra
+                            isso,
+                            então parametrizei todas as automações possíveis com uso do sistema existente e com isso
+                            tenho
+                            gerei uma disponibilidade tempo, com isso pude atender uma gama maior de clientes e dando à
+                            empresa maior lucratividade e menor custo.
+
+                        </p>
+                    </div>
+                    <div class="exp_ind-1">
+                        <h3>Técnica em Edificações</h3>
+                        <p class="calendario" id="period">2005 - 2013</p>
+                        <h4>Atividades desempenhadas</h4>
+                        <ul>
+                            <li>- Projeto de PPCI, adequações e reformas;</li>
+                            <li>- Levantamento de layout para instalação das filiais;</li>
+                            <li>- Projeto arquitetônico, cortes e fachadas;</li>
+                            <li>- Maquetes eletrônicas;</li>
+                            <li>- Medição em obras;</li>
+                        </ul>
+                        <h4>Resultados</h4>
+                        <p>
+                            Fui contratada para afunção de Técnica em Edificações e ficaria responsável principalmente
+                            pela
+                            parte dos projetos de PPCI – Plano de Prevenção Contra Incêndio, mas me deparei com muita
+                            informação pois eram mais de 300 prédios alugados e de todos estes eu teria que fazer a
+                            regularização, então comecei criando um bando de dados na época o que eu tinha era apenas o
+                            Access, e nele comecei a colocar todos os imóveis e a situação de cada serviço, com isso em
+                            dois
+                            anos já tinha mais de 100 projetos aprovados e executados, sendo que a média anterior era de
+                            5
+                            projetos aprovados por ano.
+                            <br>
+                            Com essa base de dados em mãos recebi o próximo desafio que era de mapear no RS onde tinham
+                            filiais e quais o municípios que deveria ser os próximos alvos, com um levantamento da
+                            população
+                            em cada município criei no corel draw um mapa com intensidade de cor mostrando onde deveria
+                            ser
+                            as próximas filiais, o que mostrou os locais mais propícios para a abertura de mais 150
+                            unidades.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <script src="./assets/js/acordeon.js" defer></script>
+    <script src="./assets/js/acordeon.js"></script>
+    <script src="./assets/js/api.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

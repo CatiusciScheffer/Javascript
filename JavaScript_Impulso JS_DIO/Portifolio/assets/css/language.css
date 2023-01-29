@@ -7,6 +7,10 @@
     font-weight: 700;
 }
 
+.language li{
+    margin: 2rem;
+}
+
 .language li::before{
     content: '';
     display: inline-block;
