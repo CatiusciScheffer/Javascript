@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    list-style-type:none;
 }
 
 @font-face{
@@ -9,23 +10,26 @@
 }
 
 body{
-    background-color: #03010a;
-    color: #fff;
-}
-
-.main{
-    padding: 1rem;
     content: '';
-    width:100vw;
-    height: 100vh;
+    /*width:100vw;
+    height: 100vh;*/
     background: linear-gradient(-45deg,#222E7D,#AB446A, #AC3243, #781F29, #2A0A0E, #03010A, #03010A, #03010a, #03010A, #03010A, #2A0F48, #69278A, #A946B4, #DD66CA, #F588B4);
     background-size: 100%;
     background-repeat: no-repeat;
     top: 0;
     left: 0;
     z-index: -1;
+    color: #fff;
 }
 
+.main{
+    padding: 1rem;    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
 
 @media only screen and (min-width: 768px){
     .main{

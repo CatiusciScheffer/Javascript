@@ -20,6 +20,9 @@
 
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/acordeon.css">
+    <link rel="stylesheet" href="./assets/css/language.css">
+    <link rel="stylesheet" href="./assets/css/portifolio.css">
 </head>
 
 <body>
@@ -35,16 +38,81 @@
 
             <div class="information">
                 <p class="job">Transição de Carreira</p>
-                <p class="location">Porto Alegre/RS</p>
-                <p class="phone">(51) 9 8127-9781</p>
-                <p class="email">cpcscheffer@outlook.com</p>
-            </div>
-            <div class="acordeon">
-
+                <p class="location">Cachoeirinha/RS</p>
+                <p class="phone">
+                    <a href="tel:(51) 9 8127-9781">(51) 9 8127-9781</a>
+                </p>
+                <p class="email">
+                    <a href="mailto:cpcscheffer@outlook.com">cpcscheffer@outlook.com</a>
+                </p>
             </div>
         </header>
+        <section class="acordeon open">
+            <button class="btn_acordeon" type="button">
+                <span class="btn_title">Skills</span>
+            </button>
+            <div class="content">
+                <section class="tools">
+                    <h3>Ferramentas:</h3>
+                </section>
+                <section class="personal">
+                    <h3>Pessoal:</h3>
+                    <ul>
+                        <li>Empatia</li>
+                        <li>Lideranla</li>
+                        <li>Trabalho em equipe</li>
+                        <li>Flexibilidade</li>
+                        <li>Organização</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <section class="acordeon open">
+            <button class="btn_acordeon" type="button">
+                <span class="btn_title">Idiomas</span>
+            </button>
+            <div class="content">
+                <ul class="language">
+                    <li>Português BR</li>
+                    <li>Inglês (intermediário)</li>
+                </ul>
+            </div>
+        </section>
+        <section class="acordeon open">
+            <button class="btn_acordeon" type="button">
+                <span class="btn_title">Portifólio</span>
+            </button>
+            <div class="content">
+                <ul class="portifolio">
+                    <li>
+                        <a href="https://github.com/CatiusciScheffer/HTML" target="_blank">HTML</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/CatiusciScheffer/Python" target="_blank">Python</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/CatiusciScheffer/Javascript" target="_blank">JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/CatiusciScheffer/CSS" target="_blank">CSS</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/CatiusciScheffer/Banco-de-Dados" target="_blank">Banco de Dados</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="acordeon open">
+            <button class="btn_acordeon" type="button">
+                <span class="btn_title">Experiência Profissional</span>
+            </button>
+            <div class="content">
+                <p>Enc. Departamento Pessoal / Cachoeirinha Contabilidade</p>
+                <p>2019 - até o momento</p>
+            </div>
+        </section>
     </main>
-    <script src="./assets/main/main.js" defer></script>
+    <script src="./assets/js/acordeon.js" defer></script>
 </body>
 
 </html>
